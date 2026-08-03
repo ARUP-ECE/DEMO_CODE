@@ -18,6 +18,7 @@
   scanf("%d", &Blink);
   for(count=1;count<=Blink;count++)
  {
+  printf(PINK"Blinking Number :%d\n"RESET,count);
   printf(GREEN"\t\t[LED ON]\n"RESET);
   Sleep(1500);
 
