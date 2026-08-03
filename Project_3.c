@@ -13,15 +13,15 @@
   int main()
   {
     int count=1;
-    printf(":----UNLIMITED LED BLINKING----:\n\t\t");
-    printf("STARTING LED SIMULATION\n\t\t");
+    printf(CYAN"\t\t\t:----UNLIMITED LED BLINKING----:\n"RESET);
+    printf(CYAN"\t\t\t\t" "STARTING LED SIMULATION\n"RESET);
     while(1)
     {
-      printf("Blinking number :%d\n",count);
-      printf(GREEN"[LED ON]\n"RESET);
+      printf(PINK"Blinking number :%d\n"RESET,count);
+      printf(GREEN"\t\t[LED ON]\n"RESET);
       Sleep(1500);
 
-      printf(RED"[LED OFF]\n"RESET);
+      printf(RED"\t\t[LED OFF]\n"RESET);
       Sleep(1500);
       count++;
     }
